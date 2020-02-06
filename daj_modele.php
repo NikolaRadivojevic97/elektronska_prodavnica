@@ -27,6 +27,7 @@
   //   }
  
   // }
+  //luka
   function dajTelefon($id,$marka=null, $model=null,$ram=null,$kamera1=null,$kamera2=null,$mincena=null,$maxcena=null){
 
     $url = 'http://localhost/flight/model_telefona.json';
