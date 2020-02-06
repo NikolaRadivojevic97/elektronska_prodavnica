@@ -27,7 +27,6 @@
   //   }
  
   // }
-  //luka
   function dajTelefon($id,$marka=null, $model=null,$ram=null,$kamera1=null,$kamera2=null,$mincena=null,$maxcena=null){
 
     $url = 'http://localhost/flight/model_telefona.json';
@@ -48,7 +47,8 @@
         if($ram==">6"){
           if(($marka==null || $marka==$json_element['proizvodjac']) &&($model==null || $model==$json_element['naziv'])&&($ram==null || $memorija[0]>6)&&($kamera1==null || ($kamere[0]>$kamera1 && $kamere[0]<$kamera2))&&($mincena==null || ($json_element['cena']>$mincena && $json_element['cena']<$maxcena))){
             if($brojac==$id){
-              echo '<a href="#"> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
+              $href="detalji.php?id=".$json_element['model_id'];
+              echo '<a href='.$href.'> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
               echo '<h4 class="text-center">'.$json_element['naziv'].'</h4>';
               echo '<h5 class="text-center">'.$json_element['cena'].' RSD </h5>';
             }
@@ -58,7 +58,8 @@
         elseif($ram=="<4"){
           if(($marka==null || $marka==$json_element['proizvodjac']) &&($model==null || $model==$json_element['naziv'])&&($ram==null || $memorija[0]<4)&&($kamera1==null || ($kamere[0]>$kamera1 && $kamere[0]<$kamera2))&&($mincena==null || ($json_element['cena']>$mincena && $json_element['cena']<$maxcena))){
             if($brojac==$id){
-              echo '<a href="#"> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
+              $href="detalji.php?id=".$json_element['model_id'];
+              echo '<a href='.$href.'> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
               echo '<h4 class="text-center">'.$json_element['naziv'].'</h4>';
               echo '<h5 class="text-center">'.$json_element['cena'].' RSD </h5>';
             }
@@ -67,7 +68,8 @@
         }else
         if(($marka==null || $marka==$json_element['proizvodjac']) &&($model==null || $model==$json_element['naziv'])&&($ram==null || $ram==$memorija[0])&&($kamera1==null ||  ($kamere[0]>$kamera1 && $kamere[0]<$kamera2))&&($mincena==null || ($json_element['cena']>$mincena && $json_element['cena']<$maxcena))){
         if($brojac==$id){
-          echo '<a href="#"> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
+          $href="detalji.php?id=".$json_element['model_id'];
+          echo '<a href='.$href.'> <img src='.$json_element['slika'].' class="img-responsive center-block"> </a>';
           echo '<h4 class="text-center">'.$json_element['naziv'].'</h4>';
           echo '<h5 class="text-center">'.$json_element['cena'].' RSD </h5>';
           //echo $kamere[0]."k1".$kamera1."k2".$kamera2;

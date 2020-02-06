@@ -1,88 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Elektronska prodavnica</title>
-    <link rel="shortcut icon" href="assets/img/icon.png" />
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <!-- <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css"> -->
-            <!-- <script src="bootstrap-4.4.1-dist\js\bootstrap.min.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
-    
-</head>
-<body>
-    <header id="header" class="navigation">
-        <div class="container">
-            <div class="navigation-bar">
-                <!-- <div class="logo"> -->
-                  
-                    <a href="index.html">
-                        <!-- <div class="logo-container"> -->
-                          <div class="stanimir"><span class="fa fa-grav"></span></div>
-                            
-                        <!-- </div> -->
-                    </a>
-                <!-- </div> -->
-
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        <a href="mobilni_telefoni.php">Mobilni telefoni</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">Tarife</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">Lokacije</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">Prijavi se</a>
-                    </li>
-                    <li class="navigation-item">
-                        <a href="#">Registracija</a>
-                    </li>
-                    <li>
-                        <!-- <div class="logo"> -->
-                            <a href="korpa.html">
-                                <!-- <div class="logo-container"> -->
-                                    <span class="fa fa-shopping-cart"></span>
-                                <!-- </div> -->
-                            </a>
-                        <!-- </div> -->
-                    </li>
-                </ul>
-                
-            </div>
-        </div>
-    </header>
-    <script>
-    window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "20px";
-  } else {
-    document.getElementById("header").style.fontSize = "40px";
-  }
-}
+<?php include("header.php");?>
     </script>
-    <br>
-  <br>
-  <br>
-    <br>
+    
     <br>
 <div class="container">
   <div class="row" id="slider-text">
@@ -800,77 +718,7 @@ itemToClone.children(':first-child').clone()
 </script>
  
 </script>
-    <footer class="main-footer">
-        <div class="row">
-            <div class="col-4 navigation-links">
-                <h4>Meni</h4>
-                <ul>
-                    <li>
-                        <a href="#">Pocetna</a>
-                    </li>
-                    <li>
-                        <a href="#">Mobilni telefoni</a>
-                    </li>
-                    <li>
-                        <a href="#">Paketi</a>
-                    </li>
-                    <li>
-                        <a href="#">Lokacije</a>
-                    </li>
-                    <li>
-                        <a href="#">Prijavi se</a>
-                    </li>
-                    <li>
-                        <a href="#">Registracija</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-4 customer-service">
-                <h4>Korisnicki sevis</h4>
-                <ul>
-                    <li>
-                        <span>Prava korisnika</span>
-                    </li>
-                    <li>
-                        <span>Garancija</span>
-                    </li>
-                    <li>
-                        <span>Isporuka</span>
-                    </li>
-                
-                    <li>
-                        <span>Servis</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-4 social-media">
-                <h4>Drustvene mreze</h4>
-                <ul>
-                    <li>
-                        <span class="fa fa-facebook-square">Facebook</span>
-                    </li>
-                    <li>
-                        <span class="fa fa-twitter">Twitter</span>
-                    </li>
-                    <li>
-                        <span class="fa fa-instagram">Instagram</span>
-                    </li>
-                    <li>
-                        <span class="	fa fa-google-plus-official">Google+</span>
-                    </li>
-                    <li>
-                        <span class="fa fa-youtube-play">YouTube</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-    </footer>
-
-</body>
-</html>
+<?php include("footer.php")?>
 <?php
               function dajTelefon($id){
                 $url = 'http://localhost/flight/model_telefona/'.$id.'.json';
@@ -881,7 +729,8 @@ itemToClone.children(':first-child').clone()
                 $curl_odgovor = curl_exec($curl);
                 curl_close($curl);
                 $json_objekat=json_decode($curl_odgovor);
-                echo '<a href="#"> <img src='.$json_objekat->slika.' class="img-responsive center-block"> </a>';
+                $href="detalji.php?id=".$json_objekat->model_id;
+                echo '<a href='.$href.'> <img src='.$json_objekat->slika.' class="img-responsive center-block"> </a>';
                 echo '<h4 class="text-center">'.$json_objekat->naziv.'</h4>';
                 echo '<h5 class="text-center">'.$json_objekat->cena.' RSD</h5>';
               }
