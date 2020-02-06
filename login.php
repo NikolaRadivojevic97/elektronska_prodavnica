@@ -41,7 +41,9 @@ foreach ($json_array as $json_element) {
             header("location: index.php");
             $ima=true;
           }else{
-            $_SESSION['login_user']=$username; // Initializing Session
+            $_SESSION['login_user']=$username;
+            $_SESSION['brojac']=0; // Initializing Session
+            $_SESSION['cena_korpe']=0;
             header("location: index.php"); // Redirecting To Other Page
             $ima=true;
           }

@@ -99,15 +99,19 @@
 </style>
 <div class="child">
 <br>
-<button class="btn btn-primary btn-lg"style="background-color: #0563af; width: 40%;
+<form action="" method="post">
+<button name="submit" type="submit"class="btn btn-primary btn-lg"style="background-color: #0563af; width: 40%;
   height: 50px; margin-right:200px;">Dodaj u korpu</button>
+  
   <br><br>
 <div class="box"style="width:200px; ">
                         <h3></h3>
-                        <select id="tarife" name="id" >
+                        <select id="tarife" name="id"  onchange="document.getElementById('selected_text').value=this.options[this.selectedIndex].text">
                         <!-- <option value="">TARIFE</option> -->
 
                     </select>
+                    <input type="hidden" name="selected_text" id="selected_text" value="" />
+                    </form>
                     </div>
                     <div class="cena">
                     <h2 style="text-align: left;" id="cena"></h2>
@@ -119,6 +123,11 @@
 </div>
 </div>
 <br><br><br><br>
+<script>
+function jsfunction(){
+  alert("prijavite se da bi ste izvrsili kupovinu");
+}
+</script>
 
 <?php include("footer.php")?>
 <script>
@@ -147,3 +156,28 @@ $(document).ready(function(){
     });
 });
 </script>
+<?php 
+
+if(isset($_POST['submit'])){
+ if (!isset( $_SESSION['login_user'])){
+  echo '<script type="text/javascript">jsfunction();</script>';
+ }else{
+  $tarifa =$_POST['selected_text']; // get the selected text
+    //echo $maker;
+  $cart_item=array(
+      'id'=>$id,
+      'tarifa'=>$tarifa
+  );
+  if(!isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+}
+$broj=$_SESSION['brojac'];
+    $_SESSION['cart'][$broj]=$cart_item;
+    $_SESSION['brojac']=$_SESSION['brojac']+1;
+ //echo $_SESSION['brojac'];
+    // redirect to product list and tell the user it was added to cart
+
+
+ }
+}
+?>

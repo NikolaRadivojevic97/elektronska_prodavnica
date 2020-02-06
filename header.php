@@ -45,7 +45,7 @@
                         <a href="tarife.php">Tarife</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#">Lokacije</a>
+                        <a href="lokacije.php">Lokacije</a>
                     </li>
                     <?php 
                         session_start();
@@ -55,10 +55,13 @@
                             <a href="log_out.php">Odjavi se</a>
                         </li>';
                             echo '<li class="navigation-item">'.$korisnik.'</li>';
-                            echo '<li>
-                            <!-- <div class="logo"> -->
-                                <a href="korpa.html">
-                                    <!-- <div class="logo-container"> -->
+                            echo '<li>';
+                            if($_SESSION['brojac']>0){
+                                echo '<a href="korpa.php">';
+                            }else{
+                                echo '<a href="#">';
+                            }
+                                   echo '<!-- <div class="logo-container"> -->
                                         <span class="fa fa-shopping-cart"></span>
                                     <!-- </div> -->
                                 </a>
@@ -98,7 +101,7 @@
                         </li>';
                         echo '<li>
                         <!-- <div class="logo"> -->
-                            <a href="korpa.html">
+                            <a href="#">
                                 <!-- <div class="logo-container"> -->
                                     <span class="fa fa-shopping-cart"></span>
                                 <!-- </div> -->

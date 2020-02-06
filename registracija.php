@@ -45,7 +45,7 @@
    
    function validateFName() {
      var name = document.getElementsByName("ime")[0].value;
-     if (name.length <= 3)
+     if (name.length <= 2)
        return "Ime mora imati vise od 2 karaktera.\n";	
      return "";
    }
