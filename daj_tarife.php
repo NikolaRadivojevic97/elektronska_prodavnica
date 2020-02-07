@@ -36,7 +36,7 @@
             <h4 style="text-align: center; "><br></h4>';
             echo '<h5 style="margin: 0px; color: rgb(34, 40, 46); font-family: telenorlight, Arial, sans-serif; letter-spacing: -0.26px; text-align: center;"><span style="color: rgb(66, 66, 66);"><span style="font-weight: bold; font-size: 32px;">'.$json_element['cena'].'</span><span style="font-size: 18px;"><span style="font-weight: bold;">RSD</span>/mes.</span></span></h5>';
             echo '<h4 style="text-align: center; "><br></h4>';
-            echo '<h4 style="text-align: center; "><a href="/sajt/mobilni_telefoni.php"><input class="BlueButton" type="button" value="Izaberi telefon" onClick></a></h4>';
+            echo '<h4 style="text-align: center; "><a href="mobilni_telefoni.php"><input class="BlueButton" type="button" value="Izaberi telefon" onClick></a></h4>';
             echo '</div>
             <p><br></p>    </div>
             </div>  ';
@@ -51,7 +51,7 @@
     $donja_granica=$_GET['donja_granica'];
     echo '<tr>';
     while($gornja_granica<$donja_granica-3){
-        echo '<td style="width:500px">';
+        echo '<td style="width:33%">';
         dajTelefon($gornja_granica);
         echo '</td>';
         $gornja_granica++;
@@ -59,7 +59,7 @@
     echo '</tr>';
     echo '<tr>';
     while($gornja_granica<$donja_granica){
-        echo '<td style="width:500px">';
+        echo '<td style="width:33%">';
         dajTelefon($gornja_granica);
         echo '</td>';
         $gornja_granica++;

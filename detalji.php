@@ -127,6 +127,9 @@
 function jsfunction(){
   alert("prijavite se da bi ste izvrsili kupovinu");
 }
+function jsfunction2(){
+  alert("Morate izbrati tarifu");
+}
 </script>
 
 <?php include("footer.php")?>
@@ -163,6 +166,10 @@ if(isset($_POST['submit'])){
   echo '<script type="text/javascript">jsfunction();</script>';
  }else{
   $tarifa =$_POST['selected_text']; // get the selected text
+  if($tarifa == ""){
+    echo '<script type="text/javascript">jsfunction2();</script>';
+    return;
+  }
     //echo $maker;
   $cart_item=array(
       'id'=>$id,

@@ -56,11 +56,9 @@
                         </li>';
                             echo '<li class="navigation-item">'.$korisnik.'</li>';
                             echo '<li>';
-                            if($_SESSION['brojac']>0){
+                            
                                 echo '<a href="korpa.php">';
-                            }else{
-                                echo '<a href="#">';
-                            }
+                            
                                    echo '<!-- <div class="logo-container"> -->
                                         <span class="fa fa-shopping-cart"></span>
                                     <!-- </div> -->
