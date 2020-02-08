@@ -36,7 +36,25 @@
      result += validateAddress();
      result += validatePassword();
      result += validateKPhone();
-     
+     var name = document.getElementsByName("email")[0].value;
+     var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://pozzad-email-validator.p.rapidapi.com/emailvalidator/validateEmail/"+name,
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "pozzad-email-validator.p.rapidapi.com",
+		"x-rapidapi-key": "e656f285e2mshe3e8064b54abcddp175138jsn0949503e37e3"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	if(response['isValid']==true){
+		//alert("tacan");
+	}else{
+    alert("email nije validan");
+	}
+});
      if (result == "") return true;
      
      alert("Greska:\n\n" + result);
@@ -80,7 +98,7 @@
            return "Adresa mora imati vise od 2 karaktera.\n";
      return "";
    }
-   
+  
    function validatePassword() {
      var password = valueOf("sifra");
      var retype = valueOf("ponovi_sifru");
@@ -129,7 +147,7 @@
     <input class="input" type="password" placeholder="***********" name="ponovi_sifru" required>
     <hr>
 
-    <button type="submit" name="submit" class="registerbtn" style="background-color:#228cdb;">Registruj se</button>
+    <button type="submit" id="submit" name="submit" class="registerbtn" style="background-color:#228cdb;">Registruj se</button>
   </div>
 
  
@@ -191,4 +209,5 @@ label{
     font-size:20px;
 }
 </style>
+
 

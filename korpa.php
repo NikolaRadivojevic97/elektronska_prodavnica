@@ -87,12 +87,14 @@
                                 echo '<td data-th="Ukupno" class="text-center">';
                                 echo $json_element['cena']+$json_objekat['cena'];
                                 $mrk=$_SESSION['cena_korpe'];
+                                
                                 $_SESSION['cena_korpe']=$mrk+$json_element['cena']+$json_objekat['cena'];
-
+                                
                             }
                                 
                             
                               }
+                            
                         }
                        }
                        
@@ -134,15 +136,105 @@
 						<tr>
 							<td><a href="mobilni_telefoni.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Nastavi Kupovinu</a></td>
 							<td colspan="2" class="hidden-xs"></td>
-                            <td></td>
-                            <?php echo '<td class="hidden-xs text-center"><strong>'.$_SESSION['cena_korpe'].'</strong></td>'; $_SESSION['cena_korpe']=0;?>
-							<td class="hidden-xs text-center"><strong></strong></td>
-							<td><a href="#" class="btn btn-success btn-block">Potvrdi <i class="fa fa-angle-right"></i></a></td>
+                            <td>
+                    </td>
+                            <?php $_SESSION['cena']=$_SESSION['cena_korpe']; echo '<td id="cena" class="hidden-xs text-center"><strong>'.$_SESSION['cena_korpe'].'</strong></td>'; $_SESSION['cena_korpe']=0;?>
+                            <td><form action="potvrdi_kupovinu.php" mathod="post">
+                                <button type="submit" class="btn btn-success btn-block">Potvrdi<i class="fa fa-angle-right"></i></button></td>
+							<!-- <td><a href="#" class="btn btn-success btn-block">Potvrdi <i class="fa fa-angle-right"></i></a></td> -->
+                            </form>
 						</tr>
 					</tfoot>
 				</table>
+                <form action="" mathod="post">
+                            <div class="box"  style="width:200px;">
+                            <select name="valute">
+                        <option value="">Valuta</option>
+                        
+                        <option value="eur" >eur</option>
+                        
+                        <option value="usd" >usd</option>
+                        
+                        <option value="chf" >chf</option>
+                        
+                        <option value="gbr" >gbr</option>
+                        
+                        <option value="aud" >aud</option>     
+                        
+                        <option value="cad" >cad</option>
+                        
+                        <option value="sek" >sek</option>
+                        
+                        <option value="dkk" >dkk</option>
+                        
+                        <option value="nok" >nok</option>
+                        
+                        <option value="jpy" >jpy</option>
+                        
+                        <option value="rub" >rub</option>
+                        
+                        <option value="cny" >cny</option>
+                        
+                        <option value="hrk" >hrk</option>
+                        
+                        <option value="kwd" >kwd</option>
+                        
+                        <option value="pln" >pln</option>
+                        
+                        <option value="czk" >czk</option>
+
+                        <option value="huf" >huf</option>
+                        
+                        <option value="bam" >bam</option>
+                        
+                    </select>
+                    <button type="submit1" name="submit1" class="btn btn-success btn-block">Zameni valutu<i class="fa fa-angle-right"></i></button>
+                    </form>
+                    <?php
+                    if(isset($_GET['submit1'])){
+                        //echo "uso";
+                        $valuta=isset($_GET['valute'])? $_GET['valute'] : false;
+                        $cena=$_SESSION['cena'];
+                        //echo $valuta;
+                        //echo $cena;
+                        $url='https://api.kursna-lista.info/0e0156083e1ccc17dc40319ca542628a/konvertor/rsd/'.$valuta.'/'.$cena;
+                        $curl = curl_init($url);
+                            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Accept: application/json'));
+                            curl_setopt($curl, CURLOPT_POST, false);
+                            $curl_odgovor = curl_exec($curl);
+                            curl_close($curl);
+                            $json_objekat=json_decode($curl_odgovor);
+                            //print_r($json_objekat);
+                            //echo $json_objekat->result->value;
+                        
+                            $_SESSION['promenjena_cena']=$json_objekat->result->value;
+                            
+                    echo '<td id="cena" class="hidden-xs text-center"><strong>'.$_SESSION['promenjena_cena'].' '.$valuta.'</strong></td>'; $_SESSION['promenjena_cena']=0;
+                    }?>
+                        </div>
+               
+                
 </div>
-<br><br><br>
+<!-- <script>
+                $(document).ready(function(){
+                $("#valute").on("change", function() {
+                    alert("aaa");
+                    var valuta=$("#valute option:selected" ).text();
+                    var cena=5;
+                    $.ajax({
+                    type: 'GET',
+                    url: 'https://api.kursna-lista.info/0e0156083e1ccc17dc40319ca542628a/konvertor/rsd/'.valuta.'/'.cena,
+                    dataType: 'json',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function(response) {
+                        $('#cena').html(JSON.stringify(response));
+                    }
+                });
+                });
+                });
+                </script> -->
+<br><br><br><br><br><br><br>
 <style>
 .table>tbody>tr>td, .table>tfoot>tr>td{
     vertical-align: middle;

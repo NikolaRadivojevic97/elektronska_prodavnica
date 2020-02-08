@@ -1,0 +1,118 @@
+<br><br>
+<html>
+ <head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+   body
+   {
+    margin:0;
+    padding:0;
+    background-color:#f1f1f1;
+   }
+   .box
+   {
+    width:98%;
+    padding:20px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:25px;
+   }
+   .navigation-bar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    width:100%;
+}
+.navigation-list
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    justify-content: right;
+    align-content: center;
+    align-items: center
+}
+.navigation-item
+{
+    display: block;
+    padding: 1em;
+}
+.navigation-item a
+{
+    font-weight: bold;
+    color: #909491;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+.navigation-item a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to right, #e1e2e2, #909491);
+    background: linear-gradient(to right, #e1e2e2, #909491);
+    transition: width 0.3s;
+}
+
+.navigation-item a:hover
+{
+    text-decoration: none;
+    color: #909491;
+}
+
+.navigation-item a:hover::after
+{
+    width: 100%;
+}
+  </style>
+ </head>
+ <body>
+ <header id="header" style="font-size:20px; width:100%">
+        <div class="container">
+            <div class="navigation-bar">
+                
+                  
+                    <a href="index.php">
+                       
+                          <div ><span><img src="63390996-vector-plantilla-de-logotipo-abstracta-tienda-de-telefonía-móvil-signo-concepto-de-tienda-de-teléfonos-inte.jpg" style="width:80px;height:80px;"></span></div>
+                    </a>
+                
+
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="admin.php">Mobilni telefoni</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="admin_tarife.php">Tarife</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="admin_ugovor.php">Ugovori</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="admin_korisnici.php">Korisnici</a>
+                    </li>
+                     <li class="navigation-item">
+                        <a href="statistika.php">Statistika</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>

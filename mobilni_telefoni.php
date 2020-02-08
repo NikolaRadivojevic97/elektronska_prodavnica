@@ -1,5 +1,5 @@
 <?php include("header.php");?>
-    </script>
+    
     
     <br>
 <div class="container">

@@ -34,7 +34,7 @@ curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
 //execute post
 $result = curl_exec($ch);
 session_start();
-$_SESSION['login_admin']=$korisnicko_ime;
+$_SESSION['login_user']=$korisnicko_ime;
 header('location:index.php');
  }
 //The data you want to send via POST

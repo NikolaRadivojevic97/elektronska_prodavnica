@@ -11,16 +11,13 @@
                         <a href="mobilni_telefoni.php">Mobilni telefoni</a>
                     </li>
                     <li>
-                        <a href="tarifr.php">Paketi</a>
+                        <a href="tarife.php">Paketi</a>
                     </li>
                     <li>
-                        <a href="#">Lokacije</a>
+                        <a href="lokacije.php">Lokacije</a>
                     </li>
                     <li>
-                        <a href="#">Prijavi se</a>
-                    </li>
-                    <li>
-                        <a href="#">Registracija</a>
+                        <a href="registracija.php">Registracija</a>
                     </li>
                 </ul>
             </div>
