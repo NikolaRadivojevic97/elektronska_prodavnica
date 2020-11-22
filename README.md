@@ -12,41 +12,48 @@ This application is built with goal of making it easier to users to find newest 
 # Screenshots
 Landing page
 <br>
-<a href="https://ibb.co/VmGGkgt"><img src="https://i.ibb.co/NSqqG9s/10.png" alt="10" border="0"></a>
+<a href="https://ibb.co/RYBtGXN"><img src="https://i.ibb.co/MZGKyzf/1.png" alt="1" border="0"></a>
+
 <br>
 Phones on sale
 <br>
-<a href="https://ibb.co/RYBtGXN"><img src="https://i.ibb.co/MZGKyzf/1.png" alt="1" border="0"></a>
+<a href="https://ibb.co/Jc4gH6D"><img src="https://i.ibb.co/GdLNRYz/2.png" alt="2" border="0"></a>
+
 <br>
 Login dropdown
 <br>
-<a href="https://ibb.co/Jc4gH6D"><img src="https://i.ibb.co/GdLNRYz/2.png" alt="2" border="0"></a>
+<a href="https://ibb.co/ZM0P4fb"><img src="https://i.ibb.co/87HpvmQ/3.png" alt="3" border="0"></a>
+
 <br>
 Search phones
 <br>
-<a href="https://ibb.co/ZM0P4fb"><img src="https://i.ibb.co/87HpvmQ/3.png" alt="3" border="0"></a>
+<a href="https://ibb.co/jV7hZbZ"><img src="https://i.ibb.co/6v6YJrJ/4.png" alt="4" border="0"></a>
+
 <br>
 Phone specification and choosing package
 <br>
-<a href="https://ibb.co/jV7hZbZ"><img src="https://i.ibb.co/6v6YJrJ/4.png" alt="4" border="0"></a>
+<a href="https://ibb.co/hVQpXQp"><img src="https://i.ibb.co/L1j4Qj4/5.png" alt="5" border="0"></a>
+
 <br>
 Shopping cart
-<a href="https://ibb.co/hVQpXQp"><img src="https://i.ibb.co/L1j4Qj4/5.png" alt="5" border="0"></a>
+<br><a href="https://ibb.co/yhNhNCJ"><img src="https://i.ibb.co/f8X8XW7/6.png" alt="6" border="0"></a>
 <br>
 Admin panel
-<a href="https://ibb.co/yhNhNCJ"><img src="https://i.ibb.co/f8X8XW7/6.png" alt="6" border="0"></a>
+<a href="https://ibb.co/9Vwby6f"><img src="https://i.ibb.co/JyxvrVb/7.png" alt="7" border="0"></a>
 <br>
 All contracts
 <br>
-<a href="https://ibb.co/9Vwby6f"><img src="https://i.ibb.co/JyxvrVb/7.png" alt="7" border="0"></a>
+<a href="https://ibb.co/qB6S58y"><img src="https://i.ibb.co/TcyfLGv/8.png" alt="8" border="0"></a>
+
 <br>
 Graph of phone brands sale
 <br>
-<a href="https://ibb.co/qB6S58y"><img src="https://i.ibb.co/TcyfLGv/8.png" alt="8" border="0"></a>
+<a href="https://ibb.co/zFhZSCq"><img src="https://i.ibb.co/1MfT9BF/9.png" alt="9" border="0"></a>
+
 <br>
 Shop location
 <br>
-<a href="https://ibb.co/zFhZSCq"><img src="https://i.ibb.co/1MfT9BF/9.png" alt="9" border="0"></a>
+<a href="https://ibb.co/VmGGkgt"><img src="https://i.ibb.co/NSqqG9s/10.png" alt="10" border="0"></a>
 <br>
 
 ## Used tehnologies
