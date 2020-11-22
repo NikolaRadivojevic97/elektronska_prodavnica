@@ -1,6 +1,7 @@
 # Mobile shop
 <p>
-This e-commerce offers functionalities of  authentication, adding new phones,editing and deleting existing ones, as well as adding and deleting packages(admin only), and also options to view those phones, packages and contracts for non-admin users. Registered users can also buy phones. There is search functionality which gives users option to find phones by name, price, ram memory and camera resolution. Application's style was created using java script, bootstrap and html, while backend was made using php and flight framework. This project is realised as collaboration of three people.
+This e-commerce offers functionalities of  authentication, adding new phones,editing and deleting existing ones, as well as adding and deleting packages(admin only), and also options to view those phones, packages and contracts for non-admin users. Registered users can also buy phones. There is search functionality which gives users option to find phones by name, price, ram memory and camera resolution. Application's style was created using java script, bootstrap and html, while backend was made using php and flight framework. This project is realised as collaboration of three people. Code need to be refacotred.
+  
 </p>
 
 # Motivation
@@ -36,9 +37,11 @@ Phone specification and choosing package
 
 <br>
 Shopping cart
-<br><a href="https://ibb.co/yhNhNCJ"><img src="https://i.ibb.co/f8X8XW7/6.png" alt="6" border="0"></a>
+<br>
+<a href="https://ibb.co/yhNhNCJ"><img src="https://i.ibb.co/f8X8XW7/6.png" alt="6" border="0"></a>
 <br>
 Admin panel
+<br>
 <a href="https://ibb.co/9Vwby6f"><img src="https://i.ibb.co/JyxvrVb/7.png" alt="7" border="0"></a>
 <br>
 All contracts
